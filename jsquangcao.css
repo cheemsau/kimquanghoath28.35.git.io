@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+.float-ck { position: fixed; bottom: 30px; z-index: 9000}
+* html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;}
+#float_content_left {border: 3px solid #01AEF0;}
+#hide_float_left {text-align:left; font-size: 11px;}
+#hide_float_left a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+#onl a{
+	text-decoration: none;
+}

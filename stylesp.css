@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+.containerchitiet {
+    display: flex;
+    width: 80%;
+    max-width: 1000px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+	text-align: center;
+	margin: 20px 160px;
+}
+
+/* Phần trái - Hình ảnh sản phẩm */
+.left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Phần phải - Thông tin sản phẩm */
+.right {
+    flex: 1;
+    padding: 20px;
+	margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h1 {
+    font-size: 22px;
+    margin-bottom: 10px;
+	text-align: center;
+}
+
+.price {
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sizes button, .quantity button, .add-to-cart {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sizes button {
+	padding: 10px 15px;
+    margin: 5px;
+    background: #ddd;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity input {
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    margin: 0 5px;
+}
+
+.add-to-cart {
+    background: orange;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+/* Position the image container (needed to position the left and right arrows) */
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+.containerchitiet {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlideschitiet {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+}
+
+.rowct:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.columnct {
+  float: left;
+  width: 20%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
